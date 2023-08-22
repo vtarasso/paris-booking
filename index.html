@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="img/favicon.ico">
+	<title>Paris Booking</title>
+</head>
+<body>
+	<header class="header">
+		<div class="container clearfix">
+			<div class="header__left">
+				<a class="header__logo" href="#">
+					TravelCream
+				</a>
+				<nav class="header__nav">
+					<ul class="header__items">
+						<li class="header__item">
+							<a href="#" class="header__link">Flights</a>
+						</li>
+						<li class="header__item">
+							<a href="#" class="header__link">Hotels</a>
+						</li>
+						<li class="header__item">
+							<a href="#" class="header__link">Trips</a>
+						</li>
+						<li class="header__item">
+							<a href="#" class="header__link">Activity</a>
+						</li>
+						<li class="header__item">
+							<a href="#" class="header__link">Deals</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="header__right">
+				<button class="header__btn">
+					Login
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<section class="hero">
+		<div class="container">
+			<h1 class="hero__heading">
+				Do you want to visit Paris?
+			</h1>
+			<p class="hero__descr">
+				Why not
+			</p>
+			<form class="hero__form">
+				<input type="text" class="hero__input" placeholder="Where are you leaving from?">
+				<input type="text" class="hero__input" placeholder="Where do you want to do?">
+				<input type="text" class="hero__input hero__input--small" placeholder="Date?">
+				<button class="hero__btn" type="submit">Search</button>
+			</form>
+		</div>
+	</section>
+
+	<section class="flights">
+		<div class="container">
+			<div class="flights__top clearfix">
+				<h2 class="flights__heading">Flights</h2>
+				<div class="flights__items">
+					<ul class="flights__list">
+						<li class="flights__item">
+							<a href="#" class="flights__link flights__link--active">Non stop</a>
+						</li>
+						<li class="flights__item">
+							<a href="#" class="flights__link">Best Price</a>
+						</li>
+						<li class="flights__item">
+							<a href="#" class="flights__link">Airline</a>
+						</li>
+						<li class="flights__item">
+							<a href="#" class="flights__link">Schedule</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="flights__table">
+				<table>
+					<thead>
+						<tr>
+							<td>Airline</td>
+							<td>Date</td>
+							<td>Departure</td>
+							<td>Arrival</td>
+							<td>Time</td>
+							<td>Price</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<div class="flights__table-icon"></div>
+								<img src="img/vueling.png" alt="logo vueling company">
+								<div class="flights__table-text">
+									Vueling
+									<span>VO1367</span>
+								</div>
+							</td>
+							<td>
+								03/11/2017
+								<span>In 3 days</span>
+							</td>
+							<td>
+								Paris (CDG)
+								<span>07:15</span>
+							</td>
+							<td>
+								Miami
+								<span>05:00</span>
+							</td>
+							<td>
+								08:45
+								<span>CDG-MIA</span>
+							</td>
+							<td>
+								<button>870 $</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="flights__table-icon"></div>
+								<img src="img/airfrance.png" alt="logo airfrance company">
+								<div class="flights__table-text">
+									Air France
+									<span>AF90</span>
+								</div>
+							</td>
+							<td>
+								03/11/2017
+								<span>In 3 days</span>
+							</td>
+							<td>
+								Paris (CDG)
+								<span>03:00</span>
+							</td>
+							<td>
+								Miami
+								<span>11:45</span>
+							</td>
+							<td>
+								08:45
+								<span>CDG-MIA</span>
+							</td>
+							<td>
+								<button>1023 $</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="flights__table-icon"></div>
+								<img src="img/american.png" alt="logo american company">
+								<div class="flights__table-text">
+									American
+									<span>AA63</span>
+								</div>
+							</td>
+							<td>
+								03/11/2017
+								<span>In 3 days</span>
+							</td>
+							<td>
+								Paris (CDG)
+								<span>01:00</span>
+							</td>
+							<td>
+								Miami
+								<span>10:00</span>
+							</td>
+							<td>
+								09:00
+								<span>CDG-MIA</span>
+							</td>
+							<td>
+								<button>980 $</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="flights__table-icon"></div>
+								<img src="img/delta.png" alt="logo delta company">
+								<div class="flights__table-text">
+									Delta
+									<span>DL405</span>
+								</div>
+							</td>
+							<td>
+								03/11/2017
+								<span>In 3 days</span>
+							</td>
+							<td>
+								Paris (CDG)
+								<span>02:30</span>
+							</td>
+							<td>
+								Miami
+								<span>11:00</span>
+							</td>
+							<td>
+								08:30
+								<span>CDG-MIA</span>
+							</td>
+							<td>
+								<button>1430 $</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="flights__table-icon"></div>
+								<img src="img/transavia.png" alt="logo transavia company">
+								<div class="flights__table-text">
+									TRANSAVIA
+									<span>TO4330</span>
+								</div>
+							</td>
+							<td>
+								03/11/2017
+								<span>In 3 days</span>
+							</td>
+							<td>
+								Paris (CDG)
+								<span>02:00</span>
+							</td>
+							<td>
+								Miami
+								<span>10:00</span>
+							</td>
+							<td>
+								08:00
+								<span>CDG-MIA</span>
+							</td>
+							<td>
+								<button>930 $</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="flights__table--link">
+					<a href="#">See all flights</a>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
