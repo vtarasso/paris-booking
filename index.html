@@ -15,26 +15,32 @@
 					TravelCream
 				</a>
 				<nav class="header__nav">
-					<ul class="header__items">
-						<li class="header__item">
-							<a href="#" class="header__link">Flights</a>
-						</li>
-						<li class="header__item">
-							<a href="#" class="header__link">Hotels</a>
-						</li>
-						<li class="header__item">
-							<a href="#" class="header__link">Trips</a>
-						</li>
-						<li class="header__item">
-							<a href="#" class="header__link">Activity</a>
-						</li>
-						<li class="header__item">
-							<a href="#" class="header__link">Deals</a>
-						</li>
-					</ul>
-					<button class="header__btn header__btn--mobile">
-						Login
-					</button>
+					<a href="#" class="header__nav-close">
+						<span></span>
+						<span></span>
+					</a>
+					<div class="header__nav--wrapper">
+						<ul class="header__items">
+							<li class="header__item">
+								<a href="flights" class="header__link">Flights</a>
+							</li>
+							<li class="header__item">
+								<a href="hotels" class="header__link">Hotels</a>
+							</li>
+							<li class="header__item">
+								<a href="#" class="header__link">Trips</a>
+							</li>
+							<li class="header__item">
+								<a href="#" class="header__link">Activity</a>
+							</li>
+							<li class="header__item">
+								<a href="#" class="header__link">Deals</a>
+							</li>
+						</ul>
+						<button class="header__btn header__btn--mobile">
+							Login
+						</button>
+					</div>
 				</nav>
 			</div>
 			<div class="header__right">
@@ -67,7 +73,7 @@
 		</div>
 	</section>
 
-	<section class="flights">
+	<section class="flights" id="flights">
 		<div class="container">
 			<div class="flights__top clearfix">
 				<h2 class="flights__heading">Flights</h2>
@@ -256,7 +262,7 @@
 		</div>
 	</section>
 
-	<section class="hotels">
+	<section class="hotels" id="hotels">
 		<div class="container">
 			<div class="hotels__top clearfix">
 				<h2 class="hotels__heading">Hotels</h2>
@@ -426,5 +432,6 @@
 			</div>
 		</div>
 	</footer>
+	<script src="app.js"></script>
 </body>
 </html>
