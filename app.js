@@ -13,7 +13,7 @@ for (let i = 0; i < menuElements.length; i++) {
         let offset = currentSection.offsetTop
 
         menu.classList.remove('header__nav-open')
-        
+
         window.scrollTo(document.body, offset, 0);
     })
 }
@@ -27,4 +27,3 @@ close.addEventListener('click', function(e){
     e.preventDefault()
     menu.classList.remove('header__nav-open')
 })
-

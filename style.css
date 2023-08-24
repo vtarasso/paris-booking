@@ -114,11 +114,12 @@ a {
 .header__nav-close span {
 	position: absolute;
 	left: 0;
-	top: 0;
+	top: 50%;
 	display: block;
 	height: 3px;
 	width: 40px;
 	background-color: #fff;
+	transform: translateY(-50%);
 }
 
 .header__nav-close span:first-child {
@@ -545,7 +546,7 @@ a {
 	.header__nav-close {
 		position: absolute;
 		right: 10px;
-		top: 40px;
+		top: 20px;
 		display: block;
 		width: 40px;
 		height: 40px;
@@ -586,7 +587,6 @@ a {
 		opacity: 1;
 		visibility: visible;
 		transition: opacity .3s, visibility .3s;
-		z-index: 10000 !important;
 	}
 
 	.hero__input {
