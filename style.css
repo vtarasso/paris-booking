@@ -39,7 +39,9 @@ a {
 }
 
 .container {
-	width: 1110px;
+	padding: 0 10px;
+	width: 100%;
+	max-width: 1130px;
 	margin: 0 auto;
 }
 
@@ -84,6 +86,25 @@ a {
 
 .header__right {
 	float: right;
+}
+
+.header__btn--mobile {
+	display: none;
+}
+
+.header__burger {
+	display: none;
+}
+
+.header__burger span {
+	display: block;
+	height: 3px;
+	width: 40px;
+	background-color: #fff;
+}
+
+.header__burger span:nth-child(2) {
+	margin: 7px 0;
 }
 
 .header__logo {
@@ -173,7 +194,7 @@ a {
 
 .hero__input:nth-child(2) {
 	border-left: none;
-	border-right: 0;
+	border-right: none;
 }
 
 .hero__input--small {
@@ -455,4 +476,193 @@ a {
 
 .footer__mail {
 	color: #ff4b64;
+}
+
+/*Adaptive*/
+@media(max-width: 1130px) {
+	.hero__form {
+		padding: 0 10px;
+		width: 100%;
+		max-width: 993px;
+	}
+}
+
+@media(max-width: 870px) {
+	.footer__column {
+		margin-bottom: 30px;
+		width: 33.3%;
+	}
+	.footer__title {
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 768px) {
+	.header__btn {
+		display: none;
+	}
+
+	.header__nav {
+		position: fixed;
+		left: 0;
+		top: 0;
+		margin: 0;
+		padding-top: 30px;
+		width: 100%;
+		height: 100vh;
+		background-color: #212438;
+		text-align: center;
+	}
+
+	.header__btn--mobile {
+		display: inline-block;	
+	}
+
+	.header__burger {
+		display: block;
+	}
+
+	.header__items {
+		width: 100%;
+	}
+
+	.header__item {
+		display: block;
+		margin-bottom: 30px;
+		width: 100%;
+		text-align: center;
+	}
+
+	.header__link {
+		display: inline-block;
+	}
+
+	.hero__input {
+		padding-left: 10px;
+		width: 30%;
+		font-size: 14px;
+	}
+
+	.hero__input--small {
+		width: 20%;
+	}
+
+	.hero__btn {
+		width: 20%;
+	}
+
+	.flights__table {
+		overflow-x: scroll;
+	}
+
+	.flights__table table {
+		width: 748px;
+	}
+
+	.hotels__card {
+		margin-right: 4%;
+		width: 48%;
+	}
+
+	.hotels__card:nth-child(2n) {
+		margin-right: 0;
+	}
+
+	.hotels__card:nth-child(3) {
+		margin-right: 4%;
+	}
+
+	.hotels__card:nth-child(-n+2) {
+		margin-bottom: 30px;
+	}
+
+	.footer__column {
+		margin-bottom: 30px;
+		width: 50%;
+	}
+
+	.footer__column:nth-child(2) {
+		width: 50%;
+	}
+	
+	.footer__column:nth-child(3) {
+		width: 50%;
+	}
+
+	.hotels__card:nth-child(-n+3) {
+		margin-bottom: 0;
+	}
+	
+	.footer__column:last-child {
+		width: 50%;
+	}
+}
+
+@media(max-width: 560px) {
+	.hero {
+		padding-top: 150px;
+		padding-bottom: 50px;
+		max-height: 450px;
+	}
+	.hero__heading {
+		font-size: 45px;
+	}
+
+	.hero__form {
+		bottom: -33px;
+	}
+	.hero__input {
+		padding-left: 10px;
+		width: 49%;
+		height: 30px;
+		font-size: 14px;
+	}
+
+	.hero__input:first-child {
+		margin-right: 2%;
+		margin-bottom: 5px;
+	}
+
+	.hero__input:nth-child(2) {
+		margin-bottom: 5px;
+		border-left: 1px solid #e6e6e6;
+		border-right: 1px solid #e6e6e6;
+	}
+
+	.hero__input--small {
+		margin-right: 2%;
+		width: 49%;
+	}
+
+	.hero__btn {
+		width: 49%;
+		height: 30px;
+	}
+
+	.flights {
+		padding-top: 55px;
+	}
+
+	.flights__heading {
+		float: none;
+		margin-bottom: 20px;
+	}
+
+	.flights__items {
+		float: none;
+	}
+
+	.hotels__item:not(:last-child) {
+		margin-right: 10px;
+	}
+
+	.hotels__card {
+		margin-right: 0 !important;
+		margin-bottom: 30px !important;
+		width: 100%;
+	}
+
+	.footer__column {
+		width: 100% !important;
+	}
 }
